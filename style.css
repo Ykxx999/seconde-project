@@ -1,0 +1,20 @@
+*{
+    margin: 1;
+    padding: 0;
+}
+
+body{
+    background-color: red;
+    font-family: "Atkinson Hyperlegible Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 1000px;
+    font-style: normal;
+}
+
+.inputfield{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+
+}
