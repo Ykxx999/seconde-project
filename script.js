@@ -56,7 +56,19 @@ btn.addEventListener('click', () => {
 
 
 
+        // Generate Alphabet Array
+        const alphabet = Array.from({ length: 26 }, (_, i) => String.fromCharCode(65 + i)); // A-Z
 
+        // Get Select Element
+        const select = document.getElementById("alphabet");
+
+        // Populate Select Options
+        alphabet.forEach(letter => {
+            const option = document.createElement("option");
+            option.value = letter;
+            option.textContent = letter;
+            select.appendChild(option);
+        });
 
 
 
