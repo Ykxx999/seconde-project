@@ -44,7 +44,7 @@ btn.addEventListener('click', () => {
             `
             <h1>${findCharacter.name}</h1>
             <img src=${findCharacter.img}>
-            <span>${findCharacter.level}
+            <span>${findCharacter.level}</span>
             `
     } else {
         displayName.innerHTML = `${input.value} not found`

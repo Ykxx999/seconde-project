@@ -8,21 +8,66 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>DigimonSite</title>
+    <title>DigimonWorld</title>
 </head>
 
-<body>
 
-    <div class="inputfield">
-        <input class="searchInput" type="text">
-        <button class="searchButton"><img src="" alt="">search</button>
+
+<body>
+<!-- Start creating full index page -->
+
+    <!-- creating a stable navbar   -->
+
+    <!-- add title in the top    -->
+    <h1 class="top-tittle">Digimon Encyclopedia</h1>
+    <hr>
+    <br><br>
+
+
+    <!-- create Highlights div -->
+        <div class="Highlights-div">
+            <span>Highlights</span>
+        </div>
+    
+    <br><br>
+
+
+
+    <!-- create search field -->
+    <div class="search-div">
+     <div class="inputfield">
+        <img class="search-tittle" src="img/search.png"> <input class="searchInput" type="search">
+     </div>
+     <div class="search-options">
+
+
+        <label for="alphabet">Select a Letter</label>
+        <select id="alphabet"></select>
+
+
+          <button class="searchButton">search</button>
+
+     </div>
     </div>
+
+
+
+
+
+
+
 
 
     <div class="card-div">
         <h1 class="display-name"></h1>
-
     </div>
+
+
+
+
+
+
+
 
     <script src="script.js"></script>
 </body>

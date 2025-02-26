@@ -11,10 +11,40 @@ body{
     font-style: normal;
 }
 
-.inputfield{
+.top-tittle{
+    text-align: center;
+}
+
+.Highlights-div{
     display: flex;
     margin: auto;
+    padding: 20px;
+    width: 1000px;
+    height: 300px;
+    background-color: aqua;
+}
+.search-div{
+    width: 1043px;
+    height: 130px;
+    background-color: blue;
+    margin: auto;
+}
+.inputfield{
+    display: flex;
     justify-content: center;
-    align-items: center;
+    padding: 20px;
+}
 
+.inputfield input{
+    width: 1000px;
+    height: 30px;
+}
+
+.search-tittle{
+    margin: 0 10px;
+    width: 30px;
+}
+
+.search-options{
+    display: flex;
 }
