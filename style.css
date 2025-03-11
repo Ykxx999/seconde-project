@@ -21,7 +21,7 @@ body{
     padding: 20px;
     width: 1000px;
     height: 300px;
-    background-color: aqua;
+    background-color: white;
 }
 .search-div{
     width: 1043px;
@@ -47,4 +47,45 @@ body{
 
 .search-options{
     display: flex;
+}
+
+/* Define the animation keyframes */
+    @keyframes pulseBlue {
+      0% {
+        opacity: 0.5;
+        color: blue;
+        text-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+      }
+      50% {
+        opacity: 1;
+        color: darkblue;
+        text-shadow: 0 0 20px rgba(0, 0, 255, 1);
+      }
+      100% {
+        opacity: 0.5;
+        color: blue;
+        text-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+      }
+    }
+
+    /* Your provided CSS with animation added */
+    .Highlights-charachter p {
+      display: flex;
+      align-items: center;
+      position: relative;
+      left: 500px;
+      top: 80px;
+      font-size: 40px;
+      animation-name: pulseBlue;          /* Links to the keyframes */
+      animation-duration: 2s;             /* Duration of one cycle */
+      animation-timing-function: ease-in-out; /* Smooth transition */
+      animation-iteration-count: infinite; /* Loops forever */
+    }
+
+.Highlights-charachter img{
+    width: 230px;
+    margin: auto;
+    position: relative;
+    left: 222px;
+    bottom: 85px;
 }

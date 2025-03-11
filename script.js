@@ -53,6 +53,35 @@ btn.addEventListener('click', () => {
 })
 
 
+// Add the Highlights-charachter
+
+let getHighCharacter;
+
+setTimeout(() => {
+    getHighCharacter = digimonList.find(digii => digii.name === "Leomon");
+    console.log(getHighCharacter); 
+
+    let highCharacter = document.getElementsByClassName('Highlights-charachter')[0]; // Get first matching element
+
+    if (highCharacter) {
+        highCharacter.innerHTML = `
+            <p>${getHighCharacter.name}</p>
+            <img src="${getHighCharacter.img}" alt="${getHighCharacter.name}">
+        `;
+    }
+}, 500); // Wait 500ms before running the code
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
